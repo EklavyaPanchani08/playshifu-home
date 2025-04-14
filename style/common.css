@@ -1,0 +1,9 @@
+.slick-arrow {
+    display: none !important;
+}
+.slick-dots li button:before{
+    height: 30px !important;
+    width: 30px !important;
+    font-size: 10px !important;
+    color: var(--secondary) !important;
+}

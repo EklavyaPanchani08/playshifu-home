@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+@import './common.css';
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #FFDE17;
+  --secondary: #5F125C;
+  --font-nunito: var(--font-nunito);
+  --font-quicksand: var(--font-quicksand);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--foreground);
+  backgrounud: var(--background);
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Example usage */
+.nnito-text {
+  font-family: var(--font-nunito);
+}
+
+.quicksand-text {
+  font-family: var(--font-quicksand);
+}
