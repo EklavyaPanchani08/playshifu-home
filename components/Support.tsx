@@ -17,7 +17,7 @@ const Support = () => {
                             />
                         </div>
                         <div className="ml-6 p-6">
-                            <h3 className="text-2xl font-bold mb-2">Have any questions? <br /> We're here to help 24x7</h3>
+                            <h3 className="text-2xl font-bold mb-2">Have any questions? <br /> We`re here to help 24x7</h3>
                             <Link
                                 href="/contact"
                                 className="inline-block bg-secondary text-white px-8 py-3 rounded-full font-semibold transition-colors"

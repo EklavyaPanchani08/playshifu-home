@@ -8,11 +8,6 @@ import com4 from '../assets/image/4.png';
 
 const VideoSection = () => {
 
-    const brands = [
-        'forbes', 'wired', 'buzzfeed', 'parents', 'fortune',
-        'inc42', 'venturebeat', 'world-economic-forum', 'business-insider'
-    ];
-
     return (
         <section className="py-16 px-4">
             <div className="xl:max-w-7xl max-w-full w-full mx-auto flex flex-col justify-center items-center">
