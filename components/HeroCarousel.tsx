@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 import Banner from '../assets/image/banner.png';
 const HeroCarousel = () => {
-  var settings = {
+  const settings = {
     dots: true,
     infinite: true,
     speed: 500,

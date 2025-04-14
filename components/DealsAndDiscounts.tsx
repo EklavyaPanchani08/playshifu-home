@@ -41,11 +41,17 @@ const DealsAndDiscounts = () => {
     return (
         <section className="py-10 mx-auto px-8">
             <h2 className="text-2xl font-extrabold text-gray-800 mb-4">Combos</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                {products.slice(0,4).map((product, index) => (
-                    <ProductCard key={index} {...product} />
-                ))}
-            </div>
+            {loading ? (
+                <div className="flex justify-center items-center min-h-[100px]">
+                    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-secondary"></div>
+                </div>
+            ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {products.slice(0, 4).map((product, index) => (
+                        <ProductCard key={index} {...product} />
+                    ))}
+                </div>
+            )}
         </section>
     );
 };

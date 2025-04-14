@@ -1,4 +1,4 @@
-import { FaStar, FaSmile, FaShippingFast, FaCheckCircle, FaBox } from 'react-icons/fa';
+import { FaStar, FaSmile, FaShippingFast, FaCheckCircle } from 'react-icons/fa';
 
 const WhyChooseUs = () => {
   const benefits = [

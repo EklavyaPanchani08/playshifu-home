@@ -12,7 +12,7 @@ export async function GET(request: Request) {
 
     // Get URL and parse query parameters
     const { searchParams } = new URL(request.url);
-    const queryObject: { [key: string]: any } = {};
+    const queryObject: Record<string, unknown> = {};
 
     // Build query object from searchParams
     searchParams.forEach((value, key) => {

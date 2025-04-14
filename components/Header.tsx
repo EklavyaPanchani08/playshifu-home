@@ -20,7 +20,7 @@ export default function Header() {
   const [cartCount, setCartCount] = useState(0);
   const [showCart, setShowCart] = useState(false);
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
-  const { dispatch } = useEvent("onCartEvent", () => updateCartCount());
+  const { } = useEvent("onCartEvent", () => updateCartCount());
 
   const updateCartCount = () => {
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
